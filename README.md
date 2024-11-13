@@ -1,12 +1,10 @@
 # ssshome
 
-A new Flutter project.
+The homepage for Student Success Services
 
-## Getting Started
+## What to know?
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/to/state-management-sample).
+??
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev), which offers tutorials,
