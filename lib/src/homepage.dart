@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 16),
-            Image(image: AssetImage('assets/images/owl2a.png')),
+            SizedBox(height: 400, width: 400, child: Image(image: AssetImage('assets/images/owl2a.png'))),
             Center(
               child: Text(
                 'We are here to support the academic journey, from getting started through your successful outcomes.',
