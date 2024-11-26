@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:ssshome/src/accessibility.dart';
+import 'package:ssshome/src/privacy.dart';
 // import 'package:ssshome/src/sample_feature/sample_item_details_view.dart';
 // import 'package:ssshome/src/sample_feature/sample_item_list_view.dart';
 // import 'package:ssshome/src/settings/settings_view.dart';
@@ -81,6 +82,8 @@ class MyApp extends StatelessWidget {
                   //   return SettingsView(controller: settingsController);
                   // case SampleItemDetailsView.routeName:
                   //   return const SampleItemDetailsView();
+                  case PrivacyView.routeName:
+                    return const PrivacyView();
                   case AccessibilityView.routeName:
                     return const AccessibilityView();
                   default:

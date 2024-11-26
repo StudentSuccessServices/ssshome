@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 /// Displays the Accessibility info.
 ///
 /// Sub-info :-p
@@ -10,8 +8,6 @@ class AccessibilityView extends StatelessWidget {
   const AccessibilityView({super.key});
 
   static const routeName = '/accessibility';
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -145,7 +141,16 @@ class AccessibilityStatement extends StatelessWidget {
       ),
     );
   }
-
+    Widget _buildSubSectionHeader(String title) {
+    return Text(
+      title,
+      style: const TextStyle(
+        fontSize: 14.0,
+        fontWeight: FontWeight.bold,
+      ),
+    );
+  }
+  
   Widget _buildList(List<String> items, String type) {
     if (type == 'check') {
       return Column(
