@@ -27,10 +27,16 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(fontSize: 18),
               ),
             ),
+                        SizedBox(height: 10),
+
+            Center(
+              child: Text("To join our private preview, email Austin at austin@studentsuccessservices.org"),
+            ),
             SizedBox(height: 16),
           ],
         ),
       ),
+      endDrawer: const Drawer(),
     );
   }
 }

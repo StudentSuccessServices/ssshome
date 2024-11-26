@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:ssshome/src/accessibility.dart';
+// import 'package:ssshome/src/sample_feature/sample_item_details_view.dart';
+// import 'package:ssshome/src/sample_feature/sample_item_list_view.dart';
+// import 'package:ssshome/src/settings/settings_view.dart';
 import 'homepage.dart';
 // import 'sample_feature/sample_item_details_view.dart';
 // import 'sample_feature/sample_item_list_view.dart';
@@ -59,7 +63,13 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(),
           darkTheme: ThemeData.dark(),
           themeMode: settingsController.themeMode,
-
+          // initialRoute: '/',
+          // routes: {
+          //   // When navigating to the "/" route, build the FirstScreen widget.
+          //   '/': (context) => const HomePage(),
+          //   // When navigating to the "/second" route, build the SecondScreen widget.
+          //   AccessibilityView.routeName: (context) => const AccessibilityView(),
+          // },
           // Define a function to handle named routes in order to support
           // Flutter web url navigation and deep linking.
           onGenerateRoute: (RouteSettings routeSettings) {
@@ -71,7 +81,8 @@ class MyApp extends StatelessWidget {
                   //   return SettingsView(controller: settingsController);
                   // case SampleItemDetailsView.routeName:
                   //   return const SampleItemDetailsView();
-                  // case SampleItemListView.routeName:
+                  case AccessibilityView.routeName:
+                    return const AccessibilityView();
                   default:
                     // return const SampleItemListView();
                     return const HomePage();
