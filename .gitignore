@@ -44,7 +44,7 @@ app.*.map.json
 
 # FIREBASE
 .firebase
-firebase.json
+#firebase.json
 firebase.config.js
 *.firebaseui.dart
 .firebaserc
